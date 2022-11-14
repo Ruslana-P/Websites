@@ -1,0 +1,59 @@
+@media screen and  (min-width: 1280px) {
+    .game_field{
+        width: 910px;
+        height: 910px;
+    }
+    .field_cell{
+        width: 129px;
+        height: 129px;
+    }
+    .divButtons{
+        width: 910px;
+    }
+    #gameInfo{
+        width: 910px;
+    }
+    .divLinks {
+        width: 910px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .game_field {
+        width: 560px;
+        height: 560px;
+    }
+    .field_cell {
+        width: 79px;
+        height: 79px;
+    }
+    .divButtons {
+        width: 560px;
+    }
+    #gameInfo {
+        width: 560px;
+    }
+    .divLinks {
+        width: 560px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .game_field {
+        width: 210px;
+        height: 210px;
+    }
+    .field_cell {
+        width: 29px;
+        height: 29px;
+    }
+    .divButtons {
+        width: 210px;
+    }
+    #gameInfo {
+        width: 210px;
+    }
+    .divLinks {
+        width: 210px;
+    }
+}
