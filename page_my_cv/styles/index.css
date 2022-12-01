@@ -98,12 +98,14 @@ hr {
 .main-education-and-training-description span,
 .main-language-skills-info span,
 .main-work-experience-description span,
-.main-language-skills-language span {
+.main-language-skills-language span,
+.main-volunteering span {
     font-weight: 600;
 }
 .div-about-me-info-list {
     list-style-type: none;
 }
-.main-digital-skills {
+.main-digital-skills,
+.main-volunteering {
     line-height: 135%;
 }
