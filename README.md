@@ -7,3 +7,6 @@ In this repository are presented my next works:
 2.  **Page "My CV"**    
    Link to code [here](https://github.com/Ruslana-P/Portfolio/tree/main/page_my_cv)        
    Link to page [here](https://ruslana-p.github.io/Portfolio/page_my_cv/index.html)
+3. **Page "Documentation"**
+   Link to code [here](https://github.com/Ruslana-P/Portfolio/tree/main/page_documentation)        
+   Link to page [here](https://ruslana-p.github.io/Portfolio/page_documentation/index.html)
