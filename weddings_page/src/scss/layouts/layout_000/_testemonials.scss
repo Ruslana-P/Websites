@@ -1,0 +1,36 @@
+.testemonials {
+  margin: 90px 41px 70px 41px;
+  padding: 0 34px 47px 34px;
+  position: relative;
+  background-color: $lightest-gray;
+  text-align: center;
+}
+@include brownLineBefore(".testemonials", calc(100% - 64px), 1px) {
+  text-align: center;
+  top: -61px;
+}
+.testemonials__title {
+  position: absolute;
+  top: -13px;
+  margin: 0;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.055em;
+  font-weight: 300;
+}
+.testemonials__subtitle {
+  display: block;
+  font-size: 20px;
+  line-height: 107.1%;
+  font-family: $fontBaskerville-Italic;
+  padding-top: 17px;
+  font-weight: 300;
+}
+
+.testemonials__text {
+  font-size: 14px;
+  line-height: 123.1%;
+  //   text-align: center;
+  letter-spacing: 0.025em;
+  padding: 32px 0 59px;
+}

@@ -1,0 +1,16 @@
+@import "vars";
+
+@if variable_exists(google-font) {
+  @import url($google-font);
+}
+
+$prefix: if(variable-exists(prefix), #{$prefix}, "");
+
+@import "mixins/utilites";
+@import "root";
+
+@import "fonts";
+
+//comment normalize  if use tailwind
+@import "normalize";
+//@import "tailwind";

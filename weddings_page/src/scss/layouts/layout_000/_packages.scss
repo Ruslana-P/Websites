@@ -1,0 +1,38 @@
+.packages {
+  background: url("#{$imagesPath}index/packages_small.jpg") no-repeat;
+  background-size: 100% 473px;
+  text-align: center;
+}
+.packages__title {
+  margin: 0;
+  padding-top: 426px;
+  font-family: $fontParis;
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -0.075em;
+  color: $white;
+}
+.packages__subtitle {
+  display: block;
+  font-size: 16px;
+  line-height: 120.4%;
+  letter-spacing: 0.04em;
+  color: $gray;
+  position: relative;
+  width: 275px;
+  margin: 0 auto;
+}
+.packages_info {
+  display: block;
+  width: 275px;
+  font-family: $fontBaskerville-Italic;
+  font-size: 16px;
+  margin: 21px auto 25px auto;
+}
+
+@include brownLine(".packages__subtitle", "100%", "1px") {
+  botton: -3px;
+}
+.packages__btn {
+  margin-bottom: 71px;
+}

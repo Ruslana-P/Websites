@@ -1,0 +1,89 @@
+.exotic {
+  padding: 0 43px;
+  text-align: center;
+  margin-top: 79px;
+}
+@include brownLineBefore(".exotic__header", "270px", "1px") {
+  top: -10px;
+  right: 0;
+}
+
+@include brownLine(".exotic__header", "270px", "1px") {
+  bottom: -10px;
+  left: 0;
+}
+
+.exotic__header {
+  position: relative;
+  margin-bottom: 41px;
+}
+.exotic__title {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 40px;
+  color: $light-brown;
+  margin: 0;
+  position: relative;
+  width: 360px;
+  margin: 0 auto 26px auto;
+  text-align: left;
+  span {
+    font-family: $fontParis;
+    font-size: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 34px;
+    left: 164px;
+    display: block;
+    color: $black;
+    font-weight: s00;
+  }
+}
+.exotic__subtitle {
+  font-size: 9px;
+  line-height: 110.6%;
+}
+.exotic__options {
+  position: relative;
+  height: 179px;
+  margin-bottom: 90px;
+}
+.option-d {
+  margin-top: 26px;
+  margin-bottom: 115px;
+}
+.option-i {
+  margin-bottom: 67px;
+}
+.exotic__options:after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 70%;
+  background-color: $lightest-gray;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.option__title {
+  font-size: 16px;
+  line-height: 19px;
+  color: $light-brown;
+  padding: 20px 0 8px 0;
+  margin: 0;
+}
+.option__text {
+  margin: 0 0 30px 0;
+  font-size: 12px;
+  line-height: 123.1%;
+}
+.option__btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  text-decoration: none;
+}

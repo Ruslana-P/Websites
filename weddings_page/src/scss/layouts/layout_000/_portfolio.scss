@@ -1,0 +1,32 @@
+.portfolio {
+  height: 199px;
+  background: url("#{$imagesPath}/index/portfolio_small.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.portfolio__subtitle {
+  font-family: $fontMetropolis-Regular;
+  font-size: 20px;
+  line-height: 27px;
+  color: $white;
+  margin: 0;
+  text-align: center;
+  padding: 129px 0 2px 0;
+}
+.btn {
+  width: 128px;
+  height: 25px;
+  filter: drop-shadow(-10px 0px 16px rgba(0, 0, 0, 0.2));
+  border-radius: 5px;
+  background: #d59d40;
+  margin: 0 auto;
+  display: block;
+  font-family: $fontBaskerville-Italic;
+  font-size: 14px;
+
+  text-align: center;
+  letter-spacing: -0.055em;
+  color: $white;
+  text-transform: capitalize;
+  padding: 5px 0 2px 0;
+}

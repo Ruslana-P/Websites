@@ -1,0 +1,37 @@
+// html {
+//   @include getCssVar(font-size);
+// }
+
+// body {
+//   @include getCssVar(font-family);
+//   @include getCssVar(background-color, gray);
+//   font-size: 1rem;
+// }
+
+/* .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 12px;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: $black;
+  font-family: $baseFontFamily;
+}
+.main {
+  flex: 1;
+}
+.main-title {
+  font-family: $baseFontFamily;
+  font-size: 110;
+  font-size: 25px;
+  line-height: 29px;
+
+  /* identical to box height */
+  letter-spacing: 0.055em;
+
+  color: #0d0a09;
+}
