@@ -1,0 +1,13 @@
+.container {
+  max-width: 1339px;
+  padding: 0 160px 0 160px;
+  margin: 0 auto;
+}
+.desktop-nav {
+  display: block;
+}
+.body {
+  background: url("#{$imagesPath}hero_bg_big.jpg") left top no-repeat,
+    url("#{$imagesPath}quetions_bg_big.jpg") left 0 bottom 175px no-repeat;
+  background-size: 100% 1024px, 100% 640px;
+}

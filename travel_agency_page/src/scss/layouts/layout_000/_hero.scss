@@ -1,0 +1,52 @@
+.hero {
+  height: 817px;
+  position: relative;
+}
+.hero__title {
+  width: 100%;
+  position: absolute;
+  top: 81px;
+  font-family: $Montserrat_Bold;
+  font-size: 47px;
+  line-height: 44px;
+  color: white;
+  span:first-child {
+    font-family: $KindlyJasmine;
+    color: #ffc700;
+    position: absolute;
+    top: 45px;
+    left: 206px;
+  }
+  .companyName {
+    font-size: 72px;
+    color: transparent;
+    -webkit-text-stroke: 2px $white;
+    position: absolute;
+  }
+  .name1 {
+    top: 90px;
+    left: 0;
+  }
+  .name2 {
+    top: 150px;
+    left: 0;
+  }
+}
+.social-media {
+  position: absolute;
+  top: 400px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+.main__link {
+  @include btn("210px", "50px") {
+    position: absolute;
+    top: 394px;
+  }
+}

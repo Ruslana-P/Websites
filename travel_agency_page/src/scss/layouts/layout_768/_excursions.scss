@@ -1,0 +1,24 @@
+.excursions {
+  position: relative;
+}
+.excursions__cards {
+  padding: 0 45px 0 45px;
+}
+.slider-arrow {
+  position: absolute;
+  top: 298px;
+  cursor: pointer;
+}
+.arrow-left {
+  right: 0;
+}
+.arrow-right {
+  left: 0;
+}
+.excursions__card {
+  width: 295px;
+  height: 490px;
+}
+.title {
+  font-size: 24px;
+}

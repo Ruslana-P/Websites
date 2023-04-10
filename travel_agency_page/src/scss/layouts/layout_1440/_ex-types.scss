@@ -1,0 +1,8 @@
+.ex-types_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  .ex-types__card {
+    flex-basis: 48%;
+  }
+}

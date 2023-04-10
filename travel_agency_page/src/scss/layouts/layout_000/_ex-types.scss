@@ -1,0 +1,48 @@
+.ex-types {
+  font-family: $Montserrat_Medium;
+  font-size: 13px;
+  .title {
+    margin-bottom: 90px;
+  }
+  .ex-types__card {
+    padding-left: 95px;
+    position: relative;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 60px;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 75px;
+      height: 75px;
+      position: absolute;
+      left: 0;
+      margin-right: 20px;
+    }
+  }
+  .subtitle {
+    color: $blue;
+    margin: 0 0 10px 0;
+  }
+  .card1::before {
+    background-image: url("#{$imagesPath}1.svg");
+  }
+  .card2::before {
+    background-image: url("#{$imagesPath}2.svg"); //"../../../i/"
+  }
+  .card3::before {
+    background-image: url("#{$imagesPath}3.svg");
+  }
+  .card4::before {
+    background-image: url("#{$imagesPath}4.svg");
+  }
+  & > p {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  a {
+    @include btn("230px", "50px");
+    margin: 0 auto 155px auto;
+  }
+}

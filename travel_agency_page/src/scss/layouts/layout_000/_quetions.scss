@@ -1,0 +1,63 @@
+.questions {
+  height: 928px;
+  padding-top: 25px;
+}
+.form-container {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 137px 43px 138px 43px;
+  .title {
+    color: $white;
+  }
+  span {
+    color: $yellow;
+    margin-top: 6px;
+    font-family: $Montserrat_Medium;
+    font-size: 14px;
+  }
+  form {
+    font-family: $Montserrat_Medium;
+    font-size: 12px;
+
+    label {
+      width: 100%;
+      height: 60px;
+      border-bottom: 1px solid $white;
+      vertical-align: bottom;
+      color: $white;
+      padding-top: 42px;
+    }
+    input {
+      margin-left: 20px;
+      color: $yellow;
+      width: 50%;
+    }
+    button {
+      @include btn("230px", "50px") {
+        margin: 83px auto 0 auto;
+        padding: 0;
+      }
+    }
+  }
+}
+.question-form {
+  .non-valid {
+    border-bottom: 1px solid $red;
+  }
+}
+.form-container {
+  height: 662px;
+  .message {
+    margin-top: 20px;
+    color: $yellow;
+    transition: 3s;
+    font-size: 17px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .message-hide {
+    display: none;
+  }
+}

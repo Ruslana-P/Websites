@@ -1,0 +1,256 @@
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+  input {
+    display: none;
+  }
+  label {
+    display: block;
+    padding: 10px 5px 12px 5px;
+    font-size: 12px;
+    font-family: $Montserrat_Medium;
+    border-bottom: 2px solid $lightgrey;
+    margin-right: 5px;
+    text-align: center;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  input:checked + label {
+    color: $blue;
+    border-bottom: 2px solid $blue;
+  }
+}
+
+.filter {
+  border-bottom: 1px solid $lightgrey;
+  .filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-family: $Montserrat_Medium;
+      color: $blue;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+  }
+  .plus {
+    width: 17px;
+    height: 17px;
+    svg {
+      width: 100%;
+    }
+  }
+  input[type="number"] {
+    padding-left: 10px;
+    display: block;
+    height: 30px;
+    border: 1px solid $lightgrey;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .filter-money,
+  .filter-duration {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+    justify-content: left;
+    label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.filter-place {
+  margin-bottom: 30px;
+  input {
+    display: none;
+  }
+  input:checked + label::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: $blue;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+  }
+  label {
+    display: block;
+    font-family: $Montserrat_Regular;
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 5px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      border: 1px solid $lightgrey;
+      border-radius: 50%;
+      position: absolute;
+      left: 0;
+    }
+  }
+}
+
+.close {
+  .minus {
+    display: none;
+  }
+  .filter-money,
+  .filter-duration,
+  .filter-place {
+    display: none;
+  }
+}
+.open {
+  .plus {
+    display: none;
+  }
+  .filter-money,
+  .filter-duration {
+    display: flex;
+  }
+  .filter-place {
+    display: block;
+  }
+}
+
+.choose__button {
+  display: block;
+  padding: 0 10px 0 10px;
+  height: 40px;
+  border-radius: 40px;
+  font-family: $Montserrat_Bold;
+  font-size: 14px;
+}
+.choose {
+  .choose__button {
+    display: block;
+    height: 40px;
+    width: 190px;
+    border-radius: 40px;
+    font-family: $Montserrat_Bold;
+    font-size: 14px;
+    margin: 20px auto;
+  }
+}
+.btn-filter {
+  @include btn("200px", "40px") {
+    padding-top: 0s;
+  }
+}
+.btn-reset {
+  border: 1px solid $lightgrey;
+  color: $black;
+}
+.more-filters {
+  display: block;
+  font-family: $Montserrat_Medium;
+  color: $blue;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $blue;
+  font-size: 20px;
+  background-image: url("#{$imagesPath}arrows-down.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 25px 25px;
+}
+.up {
+  background-image: url("#{$imagesPath}arrows-up.svg");
+}
+
+.filters-close {
+  display: none;
+}
+#chosen-tours {
+  display: flex;
+  align-items: stretch;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 20px 0 40px 0;
+}
+.tour {
+  border: 1px solid $lightgrey;
+  padding: 10px;
+  border-radius: 15px;
+  flex-basis: 0;
+  flex-grow: 1;
+  .tour-title {
+    padding: 0;
+    color: $blue;
+    font-size: 17px;
+    font-family: $Montserrat_Regular;
+  }
+  span {
+    font-family: $Montserrat_Regular;
+    font-size: 13px;
+    padding-left: 20px;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  .tour-dur {
+    margin-right: 10px;
+  }
+  .tour-dur::before {
+    background-image: url("#{$imagesPath}time.svg");
+    background-size: 100%;
+  }
+  .tour-price::before {
+    background-image: url("#{$imagesPath}price.svg");
+    background-size: 100%;
+  }
+}
+.filters {
+  .non-valid {
+    position: relative;
+    input {
+      outline: 1px solid $red;
+    }
+    &::before {
+      position: absolute;
+      bottom: -15px;
+      display: block;
+      height: 10px;
+      font-size: 10px;
+      color: $red;
+      right: 0;
+    }
+  }
+}
+
+.filter-money {
+  .non-valid:before {
+    content: "Будь ласка, введіть число між 0 та 1000";
+  }
+}
+.filter-duration {
+  .non-valid:before {
+    content: "Будь ласка, введіть число між 0 та 24";
+  }
+}

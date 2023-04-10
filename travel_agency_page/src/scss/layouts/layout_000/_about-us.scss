@@ -1,0 +1,22 @@
+.about-us {
+  padding-top: 150px;
+  position: relative;
+  height: 999px;
+
+  img {
+    position: absolute;
+    left: -24px;
+  }
+  div {
+    position: absolute;
+    top: 309px;
+    right: 0;
+    max-width: 468px;
+    height: 386px;
+    padding: 43px;
+    background: $white;
+    border-radius: 10px;
+    vertical-align: center;
+    overflow: hidden;
+  }
+}

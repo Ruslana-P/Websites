@@ -1,0 +1,15 @@
+.header {
+  .menu-burger {
+    display: none;
+  }
+}
+.desktop-nav {
+  display: block;
+  .nav__item {
+    display: inline-block;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

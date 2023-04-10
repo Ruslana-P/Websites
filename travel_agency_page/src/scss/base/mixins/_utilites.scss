@@ -1,0 +1,18 @@
+@mixin btn($w, $h) {
+  font-family: $Montserrat_Bold;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  width: #{$w};
+  height: #{$h};
+  background: linear-gradient(92.71deg, $blue 0%, $light-blue 100%);
+  border-radius: 60px;
+  text-align: center;
+  color: white;
+  padding-top: 14px;
+  transition: all 0.5s;
+  @content;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

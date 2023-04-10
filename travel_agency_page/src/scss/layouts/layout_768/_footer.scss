@@ -1,0 +1,17 @@
+.footer {
+  height: 175px;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__logo {
+  margin: 0;
+}
+.footer__social-media {
+  margin: 0;
+  order: 1;
+}
+.footer__nav, .contacts, .footer__social-media, .footer__logo {
+  flex-basis: 0;
+  flex-grow: 1;
+}

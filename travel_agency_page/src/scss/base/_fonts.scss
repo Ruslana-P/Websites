@@ -1,0 +1,48 @@
+@import "_vars.scss";
+
+@font-face {
+  font-family: 'Montserrat_Regular';
+  src: url('#{$fontsPath}Montserrat-Regular.eot');
+  src: url('#{$fontsPath}Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsPath}Montserrat-Regular.woff') format('woff'),
+  url('#{$fontsPath}Montserrat-Regular.ttf') format('truetype'),
+  url('#{$fontsPath}Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Montserrat_Medium';
+  src: url('#{$fontsPath}Montserrat-Medium.eot');
+  src: url('#{$fontsPath}Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsPath}Montserrat-Medium.woff') format('woff'),
+  url('#{$fontsPath}Montserrat-Medium.ttf') format('truetype'),
+  url('#{$fontsPath}Montserrat-Medium.svg#Montserrat-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'KindlyJasmine';
+  src: url('#{$fontsPath}mr_KindlyJasmineG.eot');
+  src: url('#{$fontsPath}mr_KindlyJasmineG.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsPath}mr_KindlyJasmineG.woff') format('woff'),
+  url('#{$fontsPath}mr_KindlyJasmineG.ttf') format('truetype'),
+  url('#{$fontsPath}mr_KindlyJasmineG.svg#mr_KindlyJasmineG') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat_Bold';
+  src: url('#{$fontsPath}Montserrat-Bold.eot');
+  src: url('#{$fontsPath}Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('#{$fontsPath}Montserrat-Bold.woff') format('woff'),
+  url('#{$fontsPath}Montserrat-Bold.ttf') format('truetype'),
+  url('#{$fontsPath}Montserrat-Bold.svg#Montserrat-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

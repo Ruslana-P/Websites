@@ -1,0 +1,81 @@
+.title {
+  font-family: $Montserrat_Bold;
+  color: $blue;
+  margin: 0;
+}
+
+.excursions {
+  .title {
+    margin: 150px 0 40px 0;
+  }
+  .card1 {
+    background: url("#{$imagesPath}card1_bg.jpg") no-repeat;
+    background-size: 280px 540px;
+  }
+  .card2 {
+    background: url("#{$imagesPath}card2_bg.jpg") no-repeat;
+    background-size: 280px 540px;
+  }
+  .card3 {
+    background: url("#{$imagesPath}card3_bg.jpg") no-repeat;
+    background-size: 280px 540px;
+  }
+  .card4 {
+    background: url("#{$imagesPath}card4_bg.jpg") no-repeat;
+    background-size: 280px 540px;
+  }
+}
+
+.excursions__card {
+  width: 280px;
+  height: 540px;
+  font-family: $Montserrat_Medium;
+  border-radius: 10px;
+  padding: 182px 16px 0 16px;
+  color: $white;
+  margin-right: 20px;
+  .tour-type {
+    font-size: 13px;
+  }
+  .tour-type__subtitle {
+    font-family: $Montserrat_Bold;
+    color: $yellow;
+    font-size: 14px;
+  }
+  .tour-type__info {
+    font-size: 13px;
+  }
+  p {
+    font-size: 13px;
+  }
+  a {
+    @include btn("160px", "40px") {
+      padding-top: 11px;
+    }
+  }
+}
+
+.dots-list {
+  list-style-type: none;
+  display: flex;
+  padding-left: 0;
+  margin: 20px auto 0 auto;
+  width: 100px;
+  li {
+    margin-right: 10px;
+    button {
+      display: block;
+      height: 15px;
+      width: 15px;
+      background: linear-gradient(92.71deg, $blue 0%, $light-blue 100%);
+      border-radius: 50%;
+      font-size: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  li.slick-active button {
+    background: $blue;
+  }
+}

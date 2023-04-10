@@ -1,0 +1,27 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: 954px;
+  background: url("#{$imagesPath}index/hero_medium.jpg") top left no-repeat;
+  background-size: auto;
+}
+.features__titles {
+  margin: 0;
+  max-width: 50%;
+  padding: 171px 61px 0 0;
+}
+.features__title {
+  text-align: left;
+  font-size: 110px;
+  letter-spacing: 0;
+}
+.features__text {
+  max-width: 50%;
+  margin: 0;
+  padding: 88px 61px 0 0;
+  font-size: 26px;
+}
+.features__link {
+  bottom: 66px;
+}

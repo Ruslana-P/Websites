@@ -1,0 +1,68 @@
+.footer {
+  height: 412px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__logo {
+  text-align: center;
+  width: 79px;
+  height: 113px;
+  margin-bottom: 15px;
+  margin-top: 47px;
+  flex-basis: 100%;
+}
+.footer__social-media {
+  margin-bottom: 45px;
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 0;
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+.footer__nav,
+.contacts {
+  flex-basis: 50%;
+  font-size: 12px;
+  font-family: $Montserrat_Medium;
+}
+.footer__nav {
+  .nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .nav__item {
+    margin-bottom: 5px;
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}
+.contacts__link {
+  text-decoration: none;
+  color: $black;
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 21px;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    height: 19px;
+    width: 19px;
+    position: absolute;
+    left: 0;
+  }
+}
+.link1:before {
+  background: url("#{$imagesPath}call.svg");
+}
+.link2:before {
+  background: url("#{$imagesPath}tg.svg");
+}
+.link3:before {
+  background: url("#{$imagesPath}mail.svg");
+}

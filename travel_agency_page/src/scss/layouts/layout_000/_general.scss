@@ -1,0 +1,23 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main {
+  flex: 1;
+}
+.container {
+  max-width: 754px;
+  padding: 0 24px 0 24px;
+}
+.body {
+  background: url("#{$imagesPath}hero_bg_small.jpg") left top no-repeat,
+    url("#{$imagesPath}quetions_bg_small.jpg") left 0 bottom 412px no-repeat;
+  background-size: 100% 928px, 100% 928px;
+}
+.desktop-nav {
+  display: none;
+}
+.mobile-nav {
+  display: none;
+}
