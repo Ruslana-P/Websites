@@ -13,3 +13,11 @@
     }
   }
 }
+.nav__item {
+  a {
+    transition: all 0.5s;
+  }
+  a:hover {
+    font-weight: 900;
+  }
+}

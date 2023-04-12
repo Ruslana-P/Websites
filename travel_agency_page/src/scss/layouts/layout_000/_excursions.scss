@@ -10,19 +10,19 @@
   }
   .card1 {
     background: url("#{$imagesPath}card1_bg.jpg") no-repeat;
-    background-size: 280px 540px;
+    background-size: 100% 540px;
   }
   .card2 {
     background: url("#{$imagesPath}card2_bg.jpg") no-repeat;
-    background-size: 280px 540px;
+    background-size: 100% 540px;
   }
   .card3 {
     background: url("#{$imagesPath}card3_bg.jpg") no-repeat;
-    background-size: 280px 540px;
+    background-size: 100% 540px;
   }
   .card4 {
     background: url("#{$imagesPath}card4_bg.jpg") no-repeat;
-    background-size: 280px 540px;
+    background-size: 100% 540px;
   }
 }
 
@@ -31,9 +31,10 @@
   height: 540px;
   font-family: $Montserrat_Medium;
   border-radius: 10px;
-  padding: 182px 16px 0 16px;
+  padding: 170px 16px 0 16px;
   color: $white;
   margin-right: 20px;
+  position: relative;
   .tour-type {
     font-size: 13px;
   }
@@ -47,10 +48,13 @@
   }
   p {
     font-size: 13px;
+    min-height: 125px;
   }
   a {
     @include btn("160px", "40px") {
       padding-top: 11px;
+      margin: 0 auto;
+      margin-bottom: 50px;
     }
   }
 }

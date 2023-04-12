@@ -1,5 +1,7 @@
+const lang = document.querySelector("html").lang;
+
 // array with offers
-let offers = [
+const offersUa = [
   {
     title: "Подорож яхтою поблизу Одеси",
     type: "yacht",
@@ -37,7 +39,45 @@ let offers = [
   },
 ];
 
-let renderedOffers = [...offers];
+const offersEn = [
+  {
+    title: "A yacht trip near Odessa",
+    type: "yacht",
+    price: 400,
+    place: "odesa",
+    duration: 4,
+  },
+  {
+    title: "Bus tour to Kyiv",
+    type: "bus",
+    price: 900,
+    place: "kiev",
+    duration: 24,
+  },
+  {
+    title: "Jeep trip near Kharkiv",
+    type: "jeep",
+    price: 600,
+    place: "kharkiv",
+    duration: 3,
+  },
+  {
+    title: "Bus tour to Mukachevo",
+    type: "bus",
+    price: 750,
+    place: "karpaty",
+    duration: 18,
+  },
+  {
+    title: "Canyoning near Ivano-Frankivsk",
+    type: "canyon",
+    price: 700,
+    place: "iv-fran",
+    duration: 8,
+  },
+];
+let offers = lang == "ua" ? [...offersUa] : [...offersEn];
+let renderedOffers = lang == "ua" ? [...offersUa] : [...offersEn];
 
 // function for rendering elements
 function render(arr, el) {
@@ -45,8 +85,12 @@ function render(arr, el) {
     .map((item) => {
       return `<div class="tour">
             <h3 class="tour-title">${item.title}</h3>
-            <span class="tour-dur">${item.duration} годин</span>
+            <p class="tour-info">
+            <span class="tour-dur">${item.duration} 
+            ${lang == "ua" ? "год" : "hours"}
+            </span>
             <span class="tour-price">${item.price}</span>
+            </p>
         </div>`;
     })
     .join("");
@@ -56,7 +100,7 @@ function render(arr, el) {
 const tours = document.getElementById("chosen-tours");
 render(offers, tours);
 
-// add event listener to first sorting block - block (.options)
+// add eventlistener to first sorting block - block (.options)
 const options = document.querySelector(".options");
 options.addEventListener("change", function (event) {
   let value = event.target.value;
@@ -66,12 +110,11 @@ options.addEventListener("change", function (event) {
   } else {
     let sortedArray = offers.filter((item) => item.type === value);
     renderedOffers = [...sortedArray];
-    console.log(renderedOffers);
     render(sortedArray, tours);
   }
 });
 
-//add event listener to block (.filters)
+//add eventlistener to block (.filters)
 const filter = document.querySelector(".form-filters");
 filter.addEventListener("click", function (e) {
   const target = e.target;
@@ -210,7 +253,9 @@ document
     if (formValidation(e, form)) {
       sendEmail();
       const msg =
-        "Ваше повідомлення вислано. Наш прaцівник сконтактується з Вами в найближчому часі.";
+        lang === "ua"
+          ? "Ваше повідомлення вислано. Наш прaцівник сконтактується з Вами в найближчому часі."
+          : "Your message has been sent. Our employee will contact you shortly.";
       const el = document.querySelector(".form-container");
       showNotify(msg, el);
     }
