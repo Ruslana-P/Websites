@@ -1,14 +1,13 @@
 .exotic {
-  padding: 0 43px;
   text-align: center;
   margin-top: 79px;
 }
-@include brownLineBefore(".exotic__header", "270px", "1px") {
+@include brownLineBefore(".exotic__header", "72%", "1px") {
   top: -10px;
   right: 0;
 }
 
-@include brownLine(".exotic__header", "270px", "1px") {
+@include brownLine(".exotic__header", "72%", "1px") {
   bottom: -10px;
   left: 0;
 }
@@ -47,6 +46,7 @@
   position: relative;
   height: 179px;
   margin-bottom: 90px;
+  padding: 0 43px;
 }
 .option-d {
   margin-top: 26px;

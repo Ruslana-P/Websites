@@ -1,0 +1,43 @@
+$add-options__box-width: calc(100% - 164px);
+$option__descr-width: calc(100% + 82px);
+
+.add-options__title {
+  font-size: 80px;
+  line-height: 80px;
+}
+.add-options__subtitle {
+  font-size: 20px;
+  line-height: 27px;
+}
+.add-options__box {
+  margin-top: 82px;
+  width: $add-options__box-width;
+}
+.add-options__box-l:after {
+  height: 2px;
+}
+.add-options__box:first-child {
+  margin-top: 60px;
+}
+.box__option {
+  margin-top: 25px;
+}
+.option__name {
+  font-size: 22px;
+  line-height: 113.6%;
+}
+.option__price {
+  font-size: 41px;
+  line-height: 56px;
+}
+.option__descr {
+  width: $option__descr-width;
+  height: 146px;
+  top: 25px;
+  padding-right: 41%;
+  font-size: 22px;
+  line-height: 110%;
+}
+.option-open {
+  padding-bottom: 135px;
+}

@@ -1,0 +1,22 @@
+.down-nav {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  padding: 76px 161px 104px 161px;
+}
+.box__title {
+  font-size: 37px;
+  line-height: 51px;
+}
+.down-nav__box {
+  flex-basis: 48%;
+  padding: 0;
+  margin: 0;
+}
+.box_link {
+  font-size: 19px;
+}
+.box2 {
+  grid-template-rows: 60px 28px 28px;
+}

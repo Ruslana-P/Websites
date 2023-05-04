@@ -31,8 +31,9 @@
 }
 
 @include brownLine(".packages__subtitle", "100%", "1px") {
-  botton: -3px;
+  bottom: -3px;
 }
 .packages__btn {
   margin-bottom: 71px;
+  text-decoration: none;
 }

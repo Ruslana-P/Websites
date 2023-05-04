@@ -1,0 +1,82 @@
+.pack-hero {
+  background: url("#{$imagesPath}packages/hero-med.jpg") no-repeat;
+  background-position: top left;
+  background-size: 100% 520px;
+  padding: 402px 0 110px 0;
+}
+.pack-packages__title {
+  color: $white;
+  font-size: 80px;
+  line-height: 80px;
+}
+.pack-packages__subtitle {
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 65px;
+}
+.pack-packages__text {
+  padding: 0 175px;
+  font-size: 26px;
+  line-height: 111.6%;
+  text-align: center;
+  margin-bottom: 52px;
+}
+.offer2 {
+  display: block; ///delete this after adding js
+}
+.offer-l:after {
+  height: 100%;
+  width: 4px;
+  top: 0;
+  right: 0;
+}
+.offer__title {
+  padding-top: 29px;
+  font-size: 26px;
+}
+.offer__items {
+  padding: 30px 0 40px 0;
+}
+.offer__item {
+  font-size: 22px;
+  line-height: 159.1%;
+}
+.offer__item-non-incl {
+  color: $light-gray;
+}
+.offer__old-price {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+.offer__new-price {
+  font-size: 60px;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+.packages__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.packages_add-info {
+  margin: 40px 86px;
+}
+.packages_add-info-1 {
+  font-size: 33px;
+  line-height: 45px;
+}
+.packages_add-info-2 {
+  font-size: 16px;
+  line-height: 113.6%;
+}
+.packages__taxes {
+  font-size: 24px;
+  line-height: 107.1%;
+  flex-basis: 100%;
+}
+.packages__btns {
+  flex-basis: 300px;
+  height: 60px;
+  margin: 0 auto;
+}

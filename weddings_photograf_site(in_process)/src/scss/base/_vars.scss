@@ -1,17 +1,8 @@
-//fonts
-// $google-font: "https://fonts.googleapis.com/css?family=Ubuntu:400,500";
-// $prefix: $baseFontFamily:prefix- !default;
-// $baseFontSize: 16px;
 $baseFontFamily: "Baskerville-regular";
 $fontBaskerville-Italic: "Baskerville-Italic";
 $fontMetropolis-Black: "Metropolis-Black";
-$fontMetropolis-Regular: "Metropolis-Regular";
+$fontMetropolis-Regular: "Metropolis-Regular"; //avenir
 $fontParis: "Paris";
-
-// $mediumFontWeight: 500;
-
-// $mobilePadding: (12px / $baseFontSize) * 1rem;
-// $desktopPadding: 1rem;
 
 // Paths
 
@@ -21,6 +12,7 @@ $usersFilesPath: "../userfiles/";
 
 // Colors
 $black: #000000;
+$black-bg: #0d0a09;
 $gray: #464646;
 $light-brown: #d59d40;
 $light-gray: #bebebe;

@@ -1,0 +1,26 @@
+.packages {
+  height: 470px;
+  background: url("#{$imagesPath}index/packages_big.jpg") no-repeat;
+  background-size: auto;
+  background-size: 100% 470px;
+  padding-top: 57px;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.packages__title {
+  color: $white;
+}
+.packages__wrapper {
+  width: 404px;
+  padding-bottom: 3px;
+  margin: 0 0 0 344px;
+}
+.packages__subtitle:after {
+  width: 448px;
+  height: 4px;
+  left: -22px;
+}
+.packages_info {
+  font-size: 24px;
+  margin-bottom: 61px;
+}

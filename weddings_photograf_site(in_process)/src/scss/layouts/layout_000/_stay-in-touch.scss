@@ -66,12 +66,15 @@
 }
 .contacts__text {
   padding-right: 43px;
-  p {
-    margin: 0 0 0 0;
-    font-size: 12px;
-    padding-top: 30px;
-    padding-bottom: 34px;
-  }
+}
+.contacts__text-mobile {
+  margin: 0 0 0 0;
+  font-size: 12px;
+  padding-top: 30px;
+  padding-bottom: 34px;
+}
+.contacts__text-tablet {
+  display: none;
 }
 .contacts-btn {
   text-transform: uppercase;

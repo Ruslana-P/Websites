@@ -1,3 +1,4 @@
+console.log("it works");
 // function open momile navigation - div.nav__list
 function onenCloseNav() {
   document.querySelector(".mobile-nav").classList.toggle("nav-close");
@@ -36,6 +37,7 @@ let menuDescription = [
     description: "There should be a text describing this menu item.",
   },
 ];
+
 //function create and render block with description for selectes menu item
 function menuHandler(target, arr) {
   const descr = document.querySelector(".menu__item_descr");
@@ -66,6 +68,7 @@ function menuHandler(target, arr) {
 }
 
 document.addEventListener("click", function ({ target }) {
+  console.log(target);
   if (target.closest(".mobile-nav")) {
     onenCloseNav();
   } else if (target.classList.contains("menu__item")) {

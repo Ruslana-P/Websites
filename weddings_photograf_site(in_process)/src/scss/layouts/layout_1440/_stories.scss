@@ -1,0 +1,27 @@
+.stories {
+  max-width: 1920px;
+  padding-top: 189px;
+  background: url("#{$imagesPath}index/stories_big.jpg") no-repeat;
+  background-position: center 640px;
+  background-size: 100% 724px;
+  padding: 189px 168px 296px 168px;
+  text-align: left;
+  margin: 0 auto;
+}
+.stories__title {
+  font-size: 125px;
+  line-height: 125px;
+  letter-spacing: -0.045em;
+  margin-bottom: 20px;
+}
+.stories__subtitle {
+  text-align: left;
+  font-size: 41px;
+  line-height: 56px;
+  letter-spacing: -0.025em;
+}
+.stories__text {
+  max-width: 68%;
+  padding: 0;
+  margin-bottom: 466px;
+}

@@ -1,0 +1,56 @@
+.testemonials {
+  height: 800px;
+  max-width: 1920px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0 140px;
+  margin: 77px auto 205px auto;
+  gap: 49px;
+  align-items: center;
+  background: url("#{$imagesPath}index/opinion-bg1.svg") no-repeat,
+    url("#{$imagesPath}index/opinion-bg2.svg") no-repeat;
+  background-position: bottom left 150px, top right 520px;
+  &:before {
+    display: none;
+  }
+}
+.testemonials__info {
+  order: 1;
+  flex-basis: 348px;
+  height: 506px;
+  background-color: $lightest-gray;
+}
+.testemonials__options {
+  flex-grow: 1;
+}
+.testemonials__title {
+  font-size: 33px;
+  position: relative;
+  top: -26px;
+}
+.testemonials__subtitle {
+  position: relative;
+  top: -23px;
+}
+.testemonials__text {
+  font-size: 20px;
+  padding: 0 34px 46px 34px;
+}
+.opinion {
+  height: 506px;
+  position: relative;
+  padding: 0 25px;
+}
+.opinion1:after,
+.opinion2:after {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 724px;
+  background-color: $light-brown;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}

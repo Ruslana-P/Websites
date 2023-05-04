@@ -1,0 +1,64 @@
+$cu-contacts__info-width: calc(100% - 139px - 139px);
+$cu-form-width: calc(100% - 85px - 85px);
+.cu-contacts {
+  background: url("#{$imagesPath}contact-us/cu-contacts-mid.jpg") no-repeat;
+  background-size: 100% 1241px;
+  background-position: left 262px;
+}
+.cu-contacts__title {
+  padding-top: 91px;
+  font-size: 80px;
+  line-height: 80px;
+}
+.cu-contacts__info {
+  top: -68px;
+  width: $cu-contacts__info-width;
+}
+.cu__text {
+  padding: 0 70px;
+  font-size: 20px;
+  line-height: 113.6%;
+  margin-bottom: 30px;
+  span {
+    display: inline;
+  }
+}
+.cu-list {
+  padding-bottom: 38px;
+}
+.cu-list__item {
+  height: 40px;
+  margin-bottom: 30px;
+  padding-left: 70px;
+  max-width: 266px;
+}
+.cu-list__item-phone {
+  margin-bottom: 0;
+}
+.cu-list__link {
+  font-size: 19px;
+  line-height: 113.6%;
+}
+.cu-list__link:before {
+  height: 30px;
+  width: 30px;
+}
+
+// styling for form '.cu-form'
+.cu-form {
+  width: $cu-form-width;
+  gap: 40px;
+  padding-bottom: 113px;
+}
+.cu-form__item {
+  height: 60px;
+  padding-left: 25px;
+}
+.cu-form__select {
+  margin-bottom: 0;
+}
+.cu-form__button {
+  margin-top: 60px;
+  height: 60px;
+  flex-basis: 279px;
+}

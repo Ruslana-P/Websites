@@ -1,1 +1,19 @@
 @import "general";
+@import "header";
+@import "hero";
+@import "portfolio";
+@import "packages";
+@import "testemonials";
+@import "stories";
+@import "exotic";
+@import "stay-in-touch";
+@import "nav-down";
+@import "footer";
+
+// styles for page 'packages'
+@import "packages-header";
+@import "packages-hero";
+@import "packages-add-options";
+
+//styling for page 'contact us'
+@import "cu-contact-us";

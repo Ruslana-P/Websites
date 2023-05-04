@@ -1,0 +1,51 @@
+.stay-in-touch-header {
+  background: url("#{$imagesPath}index/stay-in-touch_med.jpg") no-repeat;
+  background-size: 100% 453.42px;
+  padding-top: 382px;
+}
+
+.stay-in-touch__title {
+  width: 415.2px;
+  height: 71.59px;
+  font-size: 50px;
+  padding-top: 14px;
+}
+
+.contacts {
+  gap: 72px;
+  margin: 54px 0 80px 0;
+}
+.contacts__list {
+  flex-basis: 312px;
+  flex-grow: 1;
+}
+.contacts__text {
+  flex-basis: 376px;
+  flex-grow: 1;
+}
+.contacts-item {
+  font-size: 22px;
+  text-align: right;
+  line-height: 30px;
+  margin-bottom: 33px;
+  &:after {
+    width: 30px;
+    height: 30px;
+  }
+}
+.item-inst {
+  margin-top: 59px;
+}
+.item-tel {
+  margin-bottom: 53px;
+}
+.contacts__text {
+  padding-right: 83px;
+}
+.contacts__text-mobile {
+  display: none;
+}
+.contacts__text-tablet {
+  display: block;
+  font-size: 22px;
+}

@@ -1,10 +1,15 @@
 .features {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: end;
   height: 954px;
   background: url("#{$imagesPath}index/hero_medium.jpg") top left no-repeat;
   background-size: auto;
+}
+.features__info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 .features__titles {
   margin: 0;
@@ -24,4 +29,40 @@
 }
 .features__link {
   bottom: 66px;
+}
+
+// styling for div .menu
+.menu {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.menu__list {
+  flex-basis: 346px;
+  padding-top: 0;
+  padding-left: 43px;
+}
+.menu__item-open {
+  padding-bottom: 0;
+}
+.menu__item {
+  font-size: 23px;
+  text-align: left;
+}
+.menu__item_descr {
+  position: relative;
+  height: 323px;
+  flex-basis: 421px;
+  margin: auto 0 auto 47px;
+  top: 0;
+  flex-grow: 100;
+  span {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    max-width: 63%;
+  }
+}
+.menu__item_descr::after {
+  left: -47px;
 }
