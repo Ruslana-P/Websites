@@ -1,18 +1,25 @@
+.main {
+  width: 100%;
+}
 .hero {
   max-width: 1920px;
   margin: 0 auto;
   position: relative;
+  background: url("#{$imagesPath}index/hero_big.jpg") top left no-repeat;
+  background-size: auto;
+  background-position: left 78px;
 }
 .nav {
-  flex-basis: 100%;
-  align-self: center;
+  // flex-basis: 100%;
+  // align-self: center;
   filter: drop-shadow(-10px 0px 16px rgba(0, 0, 0, 0.2));
   max-height: 78px;
   width: 100%;
   background-color: $white;
 }
 .nav__wrapper {
-  max-width: 1594px;
+  // max-width: 1594px;
+  width: 100%;
   margin: 0 auto;
 }
 .mobile-nav {
@@ -22,27 +29,26 @@
 .nav-close + .nav__list {
   height: 78px;
   display: block;
-  padding: 0;
+  padding: 0 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 67px;
+  gap: 63px;
   position: static;
   justify-content: space-between;
   align-items: center;
 }
+.nav__item {
+  flex-basis: 0;
+}
 .nav__link {
   letter-spacing: -1.8px;
+  font-size: 22px;
   &:hover {
     color: #d59d40;
   }
 }
 
-.hero {
-  background: url("#{$imagesPath}index/hero_big.jpg") top left no-repeat;
-  background-size: auto;
-  background-position: left 78px;
-}
 .features {
   background: none;
   height: auto;
