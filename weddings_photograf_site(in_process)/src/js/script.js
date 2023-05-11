@@ -1,5 +1,3 @@
-console.log("it works");
-alert("dkj");
 // function open momile navigation - div.nav__list
 function onenCloseNav() {
   document.querySelector(".mobile-nav").classList.toggle("nav-close");

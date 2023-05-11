@@ -1,5 +1,9 @@
 $cu-list-width: calc(100% - 28px - 28px);
 $cu-form-width: calc(100% - 69px - 69px);
+
+.cu-nav {
+  height: 60px;
+}
 .cu-contacts {
   background: url("#{$imagesPath}contact-us/cu-contacts-small.jpg") no-repeat;
   background-size: 100% 891px;
@@ -13,7 +17,7 @@ $cu-form-width: calc(100% - 69px - 69px);
   color: $gray;
   margin: 0;
   text-align: center;
-  padding: 62px 0 31px 0;
+  padding: 2px 0 31px 0;
   z-index: 2;
   position: relative;
 }

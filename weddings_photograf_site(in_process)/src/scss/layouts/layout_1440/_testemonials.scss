@@ -4,12 +4,9 @@
   display: flex;
   flex-wrap: nowrap;
   padding: 0 140px;
-  margin: 77px auto 205px auto;
+  margin: 205px auto;
   gap: 49px;
-  align-items: center;
-  background: url("#{$imagesPath}index/opinion-bg1.svg") no-repeat,
-    url("#{$imagesPath}index/opinion-bg2.svg") no-repeat;
-  background-position: bottom left 150px, top right 520px;
+  align-items: flex-start;
   &:before {
     display: none;
   }
@@ -19,6 +16,8 @@
   flex-basis: 348px;
   height: 506px;
   background-color: $lightest-gray;
+  position: relative;
+  top: 15px;
 }
 .testemonials__options {
   flex-grow: 1;
@@ -41,16 +40,28 @@
   position: relative;
   padding: 0 25px;
 }
-.opinion1:after,
-.opinion2:after {
-  content: "";
-  display: block;
-  width: 3px;
-  height: 724px;
-  background-color: $light-brown;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
+.opinion__title {
+  height: 55px;
+  font-size: 25px;
+  line-height: 27px;
+}
+// .opinion:after {
+//   content: "";
+//   display: block;
+//   width: 3px;
+//   height: 724px;
+//   background-color: $light-brown;
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   bottom: 0;
+//   margin: auto 0;
+// }
+.testemonials__slider-container {
+  .opinion {
+    width: 50%;
+  }
+}
+.testemonials__slider {
+  height: inherit;
 }

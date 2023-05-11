@@ -6,8 +6,10 @@
 }
 
 // styling for nav
-.bl-mobile-nav__item {
-  background-color: $white;
+.nav-close {
+  .bl-mobile-nav__item {
+    background-color: $white;
+  }
 }
 
 //styling for section content

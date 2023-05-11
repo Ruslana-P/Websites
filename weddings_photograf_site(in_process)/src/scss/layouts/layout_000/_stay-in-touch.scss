@@ -32,13 +32,18 @@
 }
 .contacts-item {
   font-family: $fontMetropolis-Regular;
-  font-size: 11px;
-  line-height: 15px;
-  height: 25px;
+
   padding-right: 23px;
   position: relative;
   margin-bottom: 15px;
   line-height: 23px;
+  a {
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 15px;
+    height: 25px;
+    color: $gray;
+  }
 }
 .contacts-item:after {
   content: "";
@@ -61,7 +66,7 @@
   background: url(#{$imagesPath}index/phone-icon.svg);
   background-size: cover;
 }
-.item-inst {
+.item-sob {
   margin-top: 30px;
 }
 .contacts__text {

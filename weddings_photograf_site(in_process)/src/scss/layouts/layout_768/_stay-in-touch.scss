@@ -24,16 +24,18 @@
   flex-grow: 1;
 }
 .contacts-item {
-  font-size: 22px;
   text-align: right;
-  line-height: 30px;
   margin-bottom: 33px;
+  a {
+    font-size: 22px;
+    line-height: 30px;
+  }
   &:after {
     width: 30px;
     height: 30px;
   }
 }
-.item-inst {
+.item-sob {
   margin-top: 59px;
 }
 .item-tel {

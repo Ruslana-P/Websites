@@ -108,14 +108,14 @@
       <!--section portfolio starts-->
       <section class="portfolio">
         <h3 class="portfolio__subtitle">AT A GLANCE</h3>
-        <a type="button" class="btn portfolio__btn">
+        <a  href='#' type="button" class="btn portfolio__btn">
           EXPLORE
         </a>
       </section>
       <!--section portfolio ends-->
       
       <!--section testemonials starts-->
-      <section class='testemonials'>
+      <section class='testemonials' id="testemonials">
         <div class="testemonials__info">
           <h2 class="testemonials__title">TESTEMONIALS</h2>
         <span class="testemonials__subtitle">from our past cliens</span>
@@ -123,34 +123,60 @@
           Our wedding photographers and videographers are nearly invisible on the day of event, but we shure do get all the attention after, once we submit our work. We are proud  to display nearly perfect scores across all of our reviewing platforms including Google and WeddingWire. 
           See for yourself!
         </p>
-        <a class="btn testemonials__btn">READ</a>
+      
+        <button class="btn testemonials__btn">READ</button>
+      </div>
+      <div class="testemonials__options testemonials__slider">
+        <div class="opinion__arrow opinion__arrow-prev">
+          <img  src="i/index/arrow-left.svg" alt="arrow-left"/>
         </div>
-        <div class="testemonials__options">
-          <!-- PUT HERE CLIENT OPINIONS WITH JS -->
-          <!-- <img class="opinion__arrow" src="i/index/arrow-left.svg" alt="arrow-left"/>
-          <div class="opinion opinion1">
-            <h3 class="opinion__title">gdfgdf</h3>
-            <h4 class="opinion__subtitle">hfdkj</h4>
+         <div class="testemonials__slider-container">
+          <div class="opinion">
+            <h3 class="opinion__title">Melissa & Calvin</h3>
+            <h4 class="opinion__subtitle">Bride and Groom, Toronto
+            </h4>
             <p class="opinion__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, praesentium mollitia. Quo molestiae, temporibus voluptas ducimus quis minima adipisci magni ad possimus quia obcaecati accusantium cupiditate magnam? Provident, quibusdam magnam!
+              We wish we could re-live that day again!!!!!! We have met our wedding photographer in advance in order to discuss the concept and the ideas we had for the couple photoshoot. He did not hesitate when we asked him what would look best, and appeared very knowledgeable. We couldn’t be happier with our pics!  
             </p>
           </div>
-          <div class="opinion opinion2">
-            <h3 class="opinion__title">gdfgdf</h3>
-            <h4 class="opinion__subtitle">hfdkj</h4>
+          <div class="opinion">
+            <h3 class="opinion__title">Gena & Michael
+            </h3>
+            <h4 class="opinion__subtitle">Bride and Groom, Richmond Hill</h4>
             <p class="opinion__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, praesentium mollitia. Quo molestiae, temporibus voluptas ducimus quis minima adipisci magni ad possimus quia obcaecati accusantium cupiditate magnam? Provident, quibusdam magnam!
+              We went with the Lucky Package for our small wedding. We only invited the closest family and friends, and we were looking for photo+video coverage that would be discreet and that would do a good job capturing everyone and everything. Our photo and video guys were professional and very friendly, which is something my guests appreciated because we are usually camera-shy. So many amazing pictures, and the video is just sweet! Thank you!  
             </p>
           </div>
-          <div class="opinion opinion3">
-            <h3 class="opinion__title">gdfgdf</h3>
-            <h4 class="opinion__subtitle">hfdkj</h4>
+          <div class="opinion">
+            <h3 class="opinion__title">Shira & Jin</h3>
+            <h4 class="opinion__subtitle">Bride and Groom, Toronto
+            </h4>
             <p class="opinion__text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, praesentium mollitia. Quo molestiae, temporibus voluptas ducimus quis minima adipisci magni ad possimus quia obcaecati accusantium cupiditate magnam? Provident, quibusdam magnam!
+              Great guys! We only got a video package with them, because unfortunately by the time we found them we already had a photographer booked. I could see that the photographer always got in their way, and I can’t imagine how come their videos are eventually so good, because I was sure all I’m gonna see is this guy and his camera. They were so professional about it, it really speaks volumes.  
             </p>
           </div>
-          <img class="opinion__arrow" src="i/index/arrow-right .svg" alt="arrow-right"/> -->
+          <div class="opinion">
+            <h3 class="opinion__title">Melissa & Calvin</h3>
+            <h4 class="opinion__subtitle">Bride and Groom, Toronto
+            </h4>
+            <p class="opinion__text">
+              We wish we could re-live that day again!!!!!! We have met our wedding photographer in advance in order to discuss the concept and the ideas we had for the couple photoshoot. He did not hesitate when we asked him what would look best, and appeared very knowledgeable. We couldn’t be happier with our pics!  
+            </p>
+          </div>
+          <div class="opinion">
+            <h3 class="opinion__title">Gena & Michael
+            </h3>
+            <h4 class="opinion__subtitle">Bride and Groom, Richmond Hill</h4>
+            <p class="opinion__text">
+              We went with the Lucky Package for our small wedding. We only invited the closest family and friends, and we were looking for photo+video coverage that would be discreet and that would do a good job capturing everyone and everything. Our photo and video guys were professional and very friendly, which is something my guests appreciated because we are usually camera-shy. So many amazing pictures, and the video is just sweet! Thank you!  
+            </p>
+          </div>
+         </div> 
+         <div class="opinion__arrow opinion__arrow-next " >
+          <img  src="i/index/arrow-right.svg" alt="arrow-right"/>
+         </div>
         </div>
+        <a href='#testemonials' class="btn testemonials__btn-open">show less</a>
       </section>
        <!--section testemonials ends-->
 
@@ -218,10 +244,10 @@
         </div>
         <div class="contacts">
           <ul class="contacts__list">
-            <li class="contacts-item item-inst">
+            <li class="contacts-item item-sob">
               <a href="mailto:info@taraweddings.ca">info@taraweddings.ca</a> 
             </li>
-            <li class="contacts-item item-sob">
+            <li class="contacts-item item-inst">
               <a href='https://www.instagram.com/taraweddings/'>
                 @taraweddings</a>
             </li>
@@ -244,7 +270,7 @@
           <h2 class="box__title">
             INTERNATIONAL WEDDINGS
           </h2>
-          <a class="box_link" href="#">
+          <a class="box_link" href="indian-wedding.html">
             Indian Wedding Photography
           </a>
           <a class="box_link" href="#">
@@ -295,7 +321,7 @@
     <!-- footer ends-->
 
     <!--  JavaScript here -->
-    <script src="js/script.js"></script>
-    <script src="js/test.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/general.js"></script>
   </body>
 </html>

@@ -19,10 +19,12 @@
   gap: 150px;
 }
 .contacts-item {
-  font-size: 31px;
   margin-bottom: 56px;
   padding-right: 121px;
-  line-height: 42px;
+  a {
+    line-height: 42px;
+    font-size: 31px;
+  }
   &:after {
     width: 60px;
     height: 60px;
