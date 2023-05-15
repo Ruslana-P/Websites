@@ -62,3 +62,10 @@ $cu-form-width: calc(100% - 85px - 85px);
   height: 60px;
   flex-basis: 279px;
 }
+.notification {
+  bottom: 25px;
+  color: $white;
+  font-size: 25px;
+  line-height: 35px;
+  width: 90%;
+}

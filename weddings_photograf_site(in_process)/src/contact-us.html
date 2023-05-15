@@ -53,7 +53,7 @@
               <a href="packages.html" class="nav__link">PACKAGES</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">BLOG</a>
+              <a href="blog.html" class="nav__link">BLOG</a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">ABOUT</a>
@@ -69,46 +69,101 @@
         <div class="cu-contacts__info">
           <ul class="cu-list">
             <li class="cu-list__item cu-list__item-mail">
-              <a class='cu-list__link' href="mailto:info@taraweddings.ca">info@taraweddings.ca</a> 
+              <a class="cu-list__link" href="mailto:info@taraweddings.ca"
+                >info@taraweddings.ca</a
+              >
             </li>
-            <li class="cu-list__item cu-list__item-inst" >
-              <a class='cu-list__link' href='https://www.instagram.com/taraweddings/'>
-                @taraweddings</a>
-              </li>
+            <li class="cu-list__item cu-list__item-inst">
+              <a
+                class="cu-list__link"
+                href="https://www.instagram.com/taraweddings/"
+              >
+                @taraweddings</a
+              >
+            </li>
             <li class="cu-list__item cu-list__item-phone">
-              <a class='cu-list__link' href="tel:+1(888)699-9443">+1(888)699-9443</a> 
+              <a class="cu-list__link" href="tel:+1(888)699-9443"
+                >+1(888)699-9443</a
+              >
             </li>
           </ul>
           <p class="cu__text">
             Tell us all about your expectations, plans or concerns. We are open
-            for any questions you might have. 
-            <span>Let’s discuss them face to face or
-              over the phone/email- you pick.</span>
+            for any questions you might have.
+            <span
+              >Let’s discuss them face to face or over the phone/email- you
+              pick.</span
+            >
           </p>
         </div>
-        <form class='cu-form'>
-            <label><input class="cu-form__item" type='text' placeholder="Your name"></label>
-            <label><input class="cu-form__item" type='tel' placeholder="+1(xxx)xxx-xxxx"></label>
-            <label><input class="cu-form__item" type='email'  placeholder="E-mail"></label>
-            <label><input class="cu-form__item cu-form__date" type='date'  placeholder="Wedding Date"></label>
-            <textarea  class="cu-form__item cu-form__textarea" placeholder="Your message"></textarea>
-            <select class="cu-form__item cu-form__select">
-                <option class="cu-form__option" selected disabled>How did you find us?</option>
-                <option></option>
-                <option></option>
-                <option></option>
-                <option></option>
-            </select>
-              <input class="btn cu-form__button" type="button" value="Contact"/>
-            <input class="btn cu-form__button" type="reset" value="reset" />
-          </form>
+        <form class="cu-form">
+          <label>
+            <input
+              class="cu-form__item"
+              type="text"
+              pattern="[A-Za-z]{3,}"
+              placeholder="Your name"
+              required
+            />
+          </label>
+          <label>
+            <input
+              class="cu-form__item"
+              type="tel"
+              pattern="[0-9]{10}"
+              placeholder="xxx-xxx-xxxx"
+              required
+            />
+          </label>
+          <label>
+            <input
+              class="cu-form__item"
+              type="email"
+              placeholder="E-mail"
+              required
+          /></label>
+          <label
+            ><input
+              class="cu-form__item cu-form__date"
+              type="date"
+              placeholder="Wedding Date"
+              required
+            />
+          </label>
+          <textarea
+            class="cu-form__item cu-form__textarea"
+            placeholder="Your message"
+            required
+          >
+          </textarea>
+          <select class="cu-form__item cu-form__select">
+            <option class="cu-form__option" value="-1" selected disabled>
+              How did you find us?
+            </option>
+            <option value="facebook">Facebook</option>
+            <option value="instagram">Instagram</option>
+            <option value="friends">Friends' recomendation</option>
+            <option value="google">Google</option>
+          </select>
+          <input
+            class="btn cu-form__button cu-form__submit"
+            type="button"
+            value="Contact"
+          />
+          <input
+            class="btn cu-form__button cu-form__button-reset"
+            type="reset"
+            value="reset"
+          />
         </form>
       </div>
-       <!--section down-nav starts-->
+      <!--section down-nav starts-->
       <section class="down-nav">
         <div class="down-nav__box box1">
           <h2 class="box__title">INTERNATIONAL WEDDINGS</h2>
-          <a class="box_link" href="#"> Indian Wedding Photography </a>
+          <a class="box_link" href="indian-wedding.html">
+            Indian Wedding Photography
+          </a>
           <a class="box_link" href="#"> Korean Wedding Photography </a>
           <a class="box_link" href="#"> Chinese Wedding Photography </a>
           <a class="box_link" href="#"> Greek Wedding Photography </a>
@@ -135,8 +190,8 @@
     </footer>
     <!-- footer ends-->
 
-  
     <!--  JavaScript here -->
     <script src="js/general.js"></script>
+    <script src="js/contact-us.js"></script>
   </body>
 </html>

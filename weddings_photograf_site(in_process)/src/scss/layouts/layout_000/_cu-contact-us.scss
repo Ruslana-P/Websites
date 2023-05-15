@@ -95,6 +95,7 @@ $cu-form-width: calc(100% - 69px - 69px);
   flex-wrap: wrap;
   gap: 14px;
   padding-bottom: 192px;
+  position: relative;
   label {
     flex-basis: 100%;
   }
@@ -128,4 +129,22 @@ $cu-form-width: calc(100% - 69px - 69px);
   flex-basis: 131px;
   text-transform: uppercase;
   margin: 0 auto;
+}
+.notification {
+  opacity: 0;
+  transition: all 0.5s;
+  color: $light-brown;
+  font-size: 20px;
+  line-height: 25px;
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  font-weight: 700;
+  span {
+    display: block;
+    text-align: center;
+  }
 }

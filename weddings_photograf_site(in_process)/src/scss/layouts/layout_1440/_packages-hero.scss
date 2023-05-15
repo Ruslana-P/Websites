@@ -1,6 +1,6 @@
 .pack-hero {
   background: none;
-  padding: 0 55px;
+  padding: 0;
   max-width: 1899px;
   margin: 0 auto;
 }
@@ -30,9 +30,6 @@
 .offers {
   margin-bottom: 76px;
 }
-.offer3 {
-  display: block; // delete after adding js
-}
 .offer__title {
   padding-top: 11px;
   font-size: 41px;
@@ -58,6 +55,7 @@
 .packages__info {
   justify-content: left;
   column-gap: 50px;
+  padding: 0 55px;
 }
 .packages_add-info {
   flex-basis: 48%;
@@ -80,4 +78,7 @@
   flex-basis: 304px;
   order: 3;
   margin: 0;
+}
+.offer {
+  flex-basis: 25%;
 }

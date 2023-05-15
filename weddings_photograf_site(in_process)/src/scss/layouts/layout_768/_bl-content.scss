@@ -22,14 +22,16 @@
   padding: 40px 0 50px 0;
 }
 .article__title {
-  margin-bottom: 20px;
   font-size: 22px;
   line-height: 113.6%;
+  font-weight: 900;
 }
 .article__date {
+  padding-top: 10px;
   margin-bottom: 30px;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 111.6%;
+  color: $gray;
 }
 .article__img {
   display: block;

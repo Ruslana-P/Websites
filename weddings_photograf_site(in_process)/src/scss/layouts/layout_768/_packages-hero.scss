@@ -1,3 +1,4 @@
+$offers__sl-container-width: calc(100% - 120px);
 .pack-hero {
   background: url("#{$imagesPath}packages/hero-med.jpg") no-repeat;
   background-position: top left;
@@ -21,14 +22,8 @@
   text-align: center;
   margin-bottom: 52px;
 }
-.offer2 {
-  display: block; ///delete this after adding js
-}
-.offer-l:after {
-  height: 100%;
-  width: 4px;
-  top: 0;
-  right: 0;
+.offer:after {
+  top: 67px;
 }
 .offer__title {
   padding-top: 29px;
@@ -47,7 +42,7 @@
 .offer__old-price {
   font-size: 40px;
   line-height: 40px;
-  margin-bottom: 40px;
+  margin-bottom: auto auto 40px auto;
 }
 .offer__new-price {
   font-size: 60px;
@@ -79,4 +74,25 @@
   flex-basis: 300px;
   height: 60px;
   margin: 0 auto;
+}
+.offer {
+  padding: 0 15px;
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.offers__sl-container {
+  width: $offers__sl-container-width;
+}
+.offers__arrow-prev,
+.offer__arrow-next {
+  background: $white;
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 60px;
+  }
 }
