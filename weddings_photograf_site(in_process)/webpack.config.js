@@ -10,6 +10,12 @@ const terser = require("terser");
 
 const jsArr = [
   path.resolve(__dirname, "src/js/ssm.min.js"),
+  path.resolve(__dirname, "src/js/blog.js"),
+  path.resolve(__dirname, "src/js/contact-us.js"),
+  path.resolve(__dirname, "src/js/general.js"),
+  path.resolve(__dirname, "src/js/index.js"),
+  path.resolve(__dirname, "src/js/indian-wedding.js"),
+  path.resolve(__dirname, "src/js/packages.js"),
   path.resolve(__dirname, "src/js/script.js"),
 ];
 

@@ -25,21 +25,29 @@ function onenCloseNav() {
 
 // function notify for all pages
 // show notification when link inactive
-// function notify(e, target) {
-//   e.preventDefault();
-//   const div = document.createElement("div");
-//   const span = document.createElement("span");
-//   span.classList.add("mesgcircle");
-//   span.textContent =
-//     "Due to the fact that this is not a real commercial project, but a student project, this link does not work. Please try another";
-//   div.classList.add("notify");
-//   div.appendChild(span);
-//   document.body.appendChild(div);
+function notify(e) {
+  console.log("it is");
+  e.preventDefault();
+  const div = document.createElement("div");
+  const span = document.createElement("span");
+  span.classList.add("mesgcircle");
+  span.textContent =
+    "Due to the fact that this a student's portfolio project, this link does not work. Please try another";
+  div.classList.add("notify");
+  div.appendChild(span);
+  document.body.appendChild(div);
 
-//   setTimeout(() => {
-//     document.querySelector(".notify").top = "0";
-//   }, 50);
-// }
+  const notifyNode = document.querySelector(".notify");
+  setTimeout(() => {
+    notifyNode.style.transform = "translateX(0)";
+  }, 50);
+  setTimeout(() => {
+    notifyNode.style.transform = "translateX(-300px)";
+  }, 3500);
+  setTimeout(() => {
+    notifyNode.remove();
+  }, 4500);
+}
 
 document.addEventListener("click", function (e) {
   const target = e.target;
@@ -48,20 +56,8 @@ document.addEventListener("click", function (e) {
     //mobile-nav for all pages
     onenCloseNav();
   }
-
-  // else if (target.classList.contains("menu__item")) {
-  //   // page index.html div#menu
-  //   menuHandler(target, menuDescription);
-  //   // } else if (target.getAttribute("href") === "#") {
-  //   //   console.log("works");
-  //   //   notify(e, target);
-  // } else if (target.classList.contains("testemonials__btn")) {
-  //   document.querySelector(".testemonials__options").style.display = "block";
-  //   target.style.display = "none";
-  //   document.querySelector(".testemonials__btn-open").style.display = "block";
-  // } else if (target.classList.contains("testemonials__btn-open")) {
-  //   document.querySelector(".testemonials__options").style.display = "none";
-  //   target.style.display = "none";
-  //   document.querySelector(".testemonials__btn").style.display = "block";
-  // }
+  if (target.getAttribute("href") === "#") {
+    //notification about not working links for all pages
+    notify(e);
+  }
 });

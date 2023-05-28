@@ -1,3 +1,4 @@
+// const articles is out datebase with articles that have be rendered
 const articles = [
   {
     title: "9 TIPS FOR WEDDING PHOTOGRAPHERS",

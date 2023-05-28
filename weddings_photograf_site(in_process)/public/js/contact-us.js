@@ -1,5 +1,6 @@
 let validation = true;
 
+//function validate form
 function formValidation(form) {
   const inputs = form.querySelectorAll("input");
   const textareas = form.querySelectorAll("textarea");
@@ -24,6 +25,7 @@ function formValidation(form) {
   });
 }
 
+//function shows message after sending form
 function showMessage(message, elem) {
   console.log("function showmessage works");
   const div = document.createElement("div");

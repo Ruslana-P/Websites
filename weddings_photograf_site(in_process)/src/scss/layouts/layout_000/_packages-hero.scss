@@ -1,4 +1,4 @@
-$offers-width: calc(100% - 35px - 35px - 80px);
+$offers-width: calc(100% - 20px);
 $offers__sl-container: calc(100% - 100px);
 
 .pack-hero {
@@ -42,12 +42,13 @@ $offers__sl-container: calc(100% - 100px);
 }
 .offer__arrow-next,
 .offers__arrow-prev {
+  background-color: $white;
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto 0;
   width: 50px;
-  height: 50px;
+  height: 100%;
   z-index: 2;
   img {
     width: 100%;
