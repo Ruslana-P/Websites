@@ -8,7 +8,7 @@ Link to main page [here](https://ruslana-p.github.io/Portfolio/weddings_photogra
 
 Link to page 'Packages' [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/packages.html)
 
-Link to page 'Contact us' [here](<https://ruslana-p.github.io/Portfolio/weddings_photograf_site(in_process)/public/contact-us.html>)
+Link to page 'Contact us' [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/contact-us.html)
 
 Link to page 'Blog' [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/blog.html)
 
