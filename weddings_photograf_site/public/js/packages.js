@@ -96,3 +96,20 @@ const packagesSlider = new Slider(
   ".offer__arrow-next",
   `${screenSize === "phone" ? 1 : screenSize === "tablet" ? 2 : 4}`
 );
+
+// function open and hide description for item '.box__option '
+document.querySelector(".add-options").addEventListener("click", (e) => {
+  if (e.target.classList.contains("option__name")) {
+    if (screenSize === "dekstop") {
+      return;
+    }
+    let currentBlock = e.target.closest(".box__option");
+    currentBlock.classList.toggle("option-open");
+    let height = window.getComputedStyle(currentBlock.lastElementChild).height;
+    currentBlock.style.paddingBottom = currentBlock.classList.contains(
+      "option-open"
+    )
+      ? height
+      : 0;
+  }
+});

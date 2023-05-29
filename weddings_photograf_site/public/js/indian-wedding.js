@@ -212,6 +212,7 @@ class Slider {
   }
 }
 
+//slider for div.i-w-slider
 const sl3 = new SliderWithDots(
   ".i-w-slider",
   ".i-w-slider__container",
@@ -221,24 +222,22 @@ const sl3 = new SliderWithDots(
   1
 );
 
-document.querySelector(".i-w-box__btn").addEventListener("click", (e) => {
-  document
-    .querySelector(".i-w-box__text")
-    .classList.toggle("i-w-box__text-open");
-  console.log(document.querySelector(".i-w-box__text"));
-  console.log(
-    document
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("i-w-box__btn")) {
+    const textNodes = document.querySelectorAll(".i-w-box__text");
+    const buttonNodes = document.querySelectorAll(".i-w-box__btn");
+    textNodes.forEach((item) => item.classList.toggle("i-w-box__text-open"));
+
+    const newText = document
       .querySelector(".i-w-box__text")
       .classList.contains("i-w-box__text-open")
-  );
-  const newText = document
-    .querySelector(".i-w-box__text")
-    .classList.contains("i-w-box__text-open")
-    ? "read less"
-    : "read more";
-  e.target.textContent = newText;
+      ? "read less"
+      : "read more";
+    buttonNodes.forEach((item) => (item.textContent = newText));
+  }
 });
 
+// slider for div.i-w-review__boxes
 const sl4 = new Slider(
   ".i-w-review__boxes",
   ".i-w-review__container",

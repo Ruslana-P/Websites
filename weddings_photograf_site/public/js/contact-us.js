@@ -27,7 +27,6 @@ function formValidation(form) {
 
 //function shows message after sending form
 function showMessage(message, elem) {
-  console.log("function showmessage works");
   const div = document.createElement("div");
   div.classList.add("notification");
   div.innerHTML = message;
