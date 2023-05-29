@@ -8,7 +8,7 @@ In this repository are presented my next works:
 2. **Page "Travel agency"**  
    Link to code [here](https://github.com/Ruslana-P/Portfolio/tree/main/travel_agency_page)  
    Link to page [here](https://ruslana-p.github.io/Portfolio/travel_agency_page/public/index.html)
-3. \*\*Page "Weddings Photograf website"  
+3. **Page "Weddings Photograf website"**
    Link to code [here](https://github.com/Ruslana-P/Portfolio/tree/main/weddings_photograf_site)
 
    Link to main page [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/index.html)  
