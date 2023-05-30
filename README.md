@@ -16,9 +16,9 @@ In this repository are presented my next works:
 
    Link to code [here](https://github.com/Ruslana-P/Portfolio/tree/main/weddings_photograf_site)
 
-   Link to main page [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/index.html)  
+   Link to the main page [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/index.html)  
    Link to page 'Packages' [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/packages.html)  
    Link to page 'Blog' [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/blog.html)  
    Link to page 'Contact us' [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/contact-us.html)  
-   Link to page 'Article 9 tipes fro wedding ' [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/article-9-tips.html)  
+   Link to page 'Article 9 tips for wedding ' [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/article-9-tips.html)  
    Link to page 'Indian Wedding' [here](https://ruslana-p.github.io/Portfolio/weddings_photograf_site/public/indian-wedding.html)
