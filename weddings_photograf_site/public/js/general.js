@@ -26,7 +26,6 @@ function onenCloseNav() {
 // function notify for all pages
 // show notification when link inactive
 function notify(e) {
-  console.log("it is");
   e.preventDefault();
   const div = document.createElement("div");
   const span = document.createElement("span");
