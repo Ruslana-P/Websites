@@ -2,7 +2,9 @@
 .gitignore
 .idea
 .DS_Store
+old-games-site/.DS_Store
 
 # folders
 old-games-site/node_modules/  
+old-games-site/.DS_Store
 
